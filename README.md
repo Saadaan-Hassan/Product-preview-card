@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-product-preview-card-using-flexbox-oqiWIS0-Q5](https://www.frontendmentor.io/solutions/responsive-product-preview-card-using-flexbox-oqiWIS0-Q5)
+- Live Site URL: [https://saadaan-hassan.github.io/Product-preview-card/](https://saadaan-hassan.github.io/Product-preview-card/m)
 
 ## My process
 
