@@ -1,0 +1,188 @@
+/* Css Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS Custom Variables */
+:root {
+  /* Colors */
+  --color-primary-900: hsl(158, 36%, 37%);
+  --color-primary-100: hsl(30, 38%, 92%);
+
+  --color-neutral-900: hsl(212, 21%, 14%);
+  --color-neutral-700: hsl(228, 12%, 48%);
+  --color-neutral-100: hsl(0, 0%, 100%);
+
+  /* Font Families */
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Fraunces", serif;
+
+  /* Font Weights */
+  --font-bold: 700;
+  --font-medium: 500;
+
+  /* Font Size */
+  --fs-100: 0.875rem;
+  --fs-900: 1.875rem;
+}
+
+body {
+  background-color: var(--color-primary-100);
+}
+
+.container {
+  --radius: 10px;
+
+  max-width: 35rem;
+  max-height: 400px;
+  margin: 15vh auto;
+  background-color: var(--color-neutral-100);
+  border-radius: var(--radius);
+}
+
+.image-holder {
+  background: url(../images/image-product-desktop.jpg) center center/cover;
+  width: 100vw;
+  height: 400px;
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.product-information {
+  flex-direction: column;
+}
+
+.category {
+  letter-spacing: 5px;
+}
+
+.price {
+  align-items: center;
+  justify-content: space-between;
+  width: 190px;
+}
+
+.orignal-price {
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.btn p {
+  margin: 0px 13px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Utility Classes */
+.font-bold {
+  font-weight: var(--font-bold);
+}
+
+.font-medium {
+  font-weight: var(--font-medium);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+
+.ff-secondary {
+  font-family: var(--ff-secondary);
+}
+
+.fw-bold {
+  font-weight: var(--font-bold);
+}
+
+.fw-medium {
+  font-weight: var(--font-medium);
+}
+
+.fs-para {
+  font-size: clamp(10px, 2vw, var(--fs-100));
+}
+
+.fs-heading {
+  font-size: clamp(0.9375rem, 3vw, var(--fs-900));
+}
+
+.btn {
+  font-family: var(--ff-primary);
+  font-weight: var(--font-bold);
+  background-color: var(--color-primary-900);
+  color: var(--color-neutral-100);
+  width: 230px;
+  margin: 20px 30px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: rgb(31, 61, 50);
+}
+
+.color-primary-900 {
+  color: var(--color-primary-900);
+}
+
+.color-neutral-900 {
+  color: var(--color-neutral-900);
+}
+
+.color-neutral-700 {
+  color: var(--color-neutral-700);
+}
+
+.margin-padding {
+  padding: 6px 12px;
+  margin: 0px 20px;
+}
+
+/* Media Quries */
+
+@media screen and (max-width: 620px) {
+  .container {
+    flex-direction: column;
+    width: 90vw;
+    max-height: 70vh;
+  }
+
+  .image-holder {
+    background: url(../images/image-product-mobile.jpg) center center/cover;
+    max-width: 90vw;
+    height: 100vh;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+
+  .category{
+    margin-top: 20px;
+  }
+
+  .fs-para {
+    font-size: var(--fs-100);
+  }
+  
+  .fs-heading {
+    font-size: var(--fs-900);
+  }
+}
